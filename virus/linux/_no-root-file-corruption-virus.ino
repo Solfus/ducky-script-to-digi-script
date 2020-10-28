@@ -1,6 +1,7 @@
-#include <DigiKeyboard.h>
-
 /*
+                                                                      Info about the script:
+                                                                      ----------------------
+
 Script category:
 ----------------
 This script fall in the category of virus.
@@ -26,9 +27,18 @@ It takes from 7 to 12 seconds to launch the code. If needed you can add more tim
 
 
 Against who is it effective?:
----------------------------------
+-----------------------------
 OS -> It is effective against GNU/Linux OS with a DE thats accepts the keyboard shortcut CTRL + ALT + T (Typicaly GNOME DE).
 Human -> It is effective against any inexperienced linux users that don't know the fundamental of linux
+
+
+How to revert changes:
+----------------------
+To revert changes, you simply need to add an execution mod to the folder. This can be done by doing 2 commands:
+
+$ chmod 755 folder-name
+            or
+$ chmod x+u folder-name
 */
 
 
