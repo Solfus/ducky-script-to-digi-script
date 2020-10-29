@@ -14,8 +14,8 @@ BASH and ZSH are shells that let you communicate with the OS. In my point of vie
 To configure it, you have files: .bashrc for BASH and .zshrc for ZSH. They are accessible for everyone, but THAT'S THE PROBLEM
 
 
-Important Discovery:
---------------------
+Introduction to the discovery:
+------------------------------
 
 For those who often use linux terminal, they know that some operation can be very long to type in the terminal, and excesively long when you have to do it often. For solving it, we
 can set an ALIAS.
@@ -29,4 +29,31 @@ alias is a whey of adding new command to represent existing ones. Let imagine we
     
 That's only if we are doing 4 this command, imagine if we have to do it for 10 folders...
 
-Because there is a repeated pattern we could create
+Because there is a repeated pattern we could create an alias of it:
+
+    $ alias plugins='/opt/lampp/htdocs/administration/wp-content/plugins'
+    
+
+Now we can repeat the commands above more quickly
+
+    $ mv file-1.mp plugins
+    $ mv file-2.tmp plugins
+    $ mv image.png plugins
+    $ mv kjo.txt plugins
+
+And to be sure it will keep itself forever in your machine, you will add the alias in your .bashrc or .zshrc for BASH and ZSH respectively (and reload it).
+
+
+What we have done know till now is creating an alias of a directory. But what if we could create an alias of a command? Or better: What if we could CREATE ALIAS OF AN EXISTING COMMAND?
+
+
+The interesting part:
+---------------------
+
+There is something interesting when using linux: YOU CAN CREATE AN ALIAS OF AN EXISTING COMMAND.
+
+For example, we can do an alias of the command cd (change directory)
+
+    $ alias cd='ls'
+
+What would happen after reloading .bashrc is that every time you type cd, it will DO THE COMMAND OF ls.
