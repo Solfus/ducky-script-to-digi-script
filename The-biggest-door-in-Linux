@@ -1,0 +1,32 @@
+d                                                            The-biggest-fail-in-Linux:
+                                                            --------------------------
+d
+
+Playing with my distro, I discovered one of the biggest fail in Linux. For that, I'm going to talk about bash and zsh
+
+For those who don't know:
+-------------------------
+
+When you enter into your terminal and type some commands, that location is called SHELL. A shell is simply a UI (user interface) that let us tell the Operating System to do what we want.
+This can be copy a file, add a user, open a port, etc...
+
+BASH and ZSH are shells that let you communicate with the OS. In my point of view there are basically the same, but they the difference lies in the way you configure it.
+To configure it, you have files: .bashrc for BASH and .zshrc for ZSH. They are accessible for everyone, but THAT'S THE PROBLEM
+
+
+Important Discovery:
+--------------------
+
+For those who often use linux terminal, they know that some operation can be very long to type in the terminal, and excesively long when you have to do it often. For solving it, we
+can set an ALIAS.
+
+alias is a whey of adding new command to represent existing ones. Let imagine we have to do the following:
+
+    $ mv file-1.mp /opt/lampp/htdocs/administration/wp-content/plugins
+    $ mv file-2.tmp /opt/lampp/htdocs/administration/wp-content/plugins
+    $ mv image.png /opt/lampp/htdocs/administration/wp-content/plugins
+    $ mv kjo.txt /opt/lampp/htdocs/administration/wp-content/plugins
+    
+That's only if we are doing 4 this command, imagine if we have to do it for 10 folders...
+
+Because there is a repeated pattern we could create
