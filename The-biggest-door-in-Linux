@@ -56,3 +56,11 @@ For example, we can do an alias of the command cd (change directory)
     $ alias cd='ls'
 
 What would happen after reloading .bashrc is that every time you type cd, it will DO THE COMMAND OF ls.
+
+This is just a little trick, now let go to the real danger.
+
+
+How to use this vulnerability?:
+-------------------------------
+
+An exp
